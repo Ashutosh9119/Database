@@ -14,11 +14,11 @@ LEFT JOIN orders o ON c.customer_id = o.customer_id;
 Output:
  customer_id | first_name | last_name | order_id 
 -------------+------------+-----------+----------
-           1 | Abhinav    | Lather    |        1
+           1 | Ashutosh    | Singh    |        1
            2 | Vishal     | Thakur    |        2
-           1 | Abhinav    | Lather    |        3
-           4 | Ayush      | Nagar     |     NULL
-           3 | Priyanshu  | Singh     |     NULL
+           1 | Akshay    | katoch   |        3
+           4 | Ayush      | Singh     |     NULL
+           3 | Sangam  | Singh     |     NULL
 (5 rows)
 
 Query: SELECT
@@ -33,8 +33,8 @@ WHERE o.order_id IS NULL;
 Output:
  customer_id | first_name | last_name | order_id 
 -------------+------------+-----------+----------
-           4 | Ayush      | Nagar     |     NULL
-           3 | Priyanshu  | Singh     |     NULL
+           4 | Ayush      | Singh     |     NULL
+           3 | Sangam   | Singh     |     NULL
 (2 rows)
 
 
@@ -292,9 +292,9 @@ Query: SELECT
 Output:
  patient_id | patient_name 
 ------------+--------------
-          1 | priyanshu
-          1 | priyanshu
-          2 | abhinav
+          1 | Sangam
+          1 | Sangam
+          2 | Akshay
           3 | varun
           4 | vishal
 (5 rows)
@@ -343,7 +343,7 @@ Query: SELECT
 Output:
  supplier_id | supplier_name | contact_name 
 -------------+---------------+--------------
-           4 | Supplier D    | Ayush Nagar
-           3 | Supplier C    | Varun Thakur
+           4 | Supplier D    | Ayush Singh
+           3 | Supplier C    | Sangam
 (2 rows)
 
